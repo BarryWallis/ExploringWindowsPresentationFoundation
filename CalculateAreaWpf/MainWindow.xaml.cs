@@ -9,10 +9,10 @@ namespace CalculateAreaWpf
     {
         public MainWindow() => InitializeComponent();
 
-        private void TriangleAreaButton_Click(object sender, RoutedEventArgs e) => _ = MessageBox.Show("Triangle Area buttton clicked");
+        private void TriangleAreaButton_Click(object sender, RoutedEventArgs e) => new TriangleAreaWindow().Show();
 
-        private void RectangleAreaButton_Click(object sender, RoutedEventArgs e) => _ = MessageBox.Show("Rectangle Area buttton clicked");
+        private void RectangleAreaButton_Click(object sender, RoutedEventArgs e) => new RectangleAreaWindow().Show();
 
-        private void TrapezoidAreaButton_Click(object sender, RoutedEventArgs e) => _ = MessageBox.Show("Trapezoid Area buttton clicked");
+        private void TrapezoidAreaButton_Click(object sender, RoutedEventArgs e) => new TrapezoidAreaWindow().Show();
     }
 }
